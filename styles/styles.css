@@ -1,0 +1,342 @@
+@font-face {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/rubik/rubik-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: Rubik, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+  background-color: #ffffff;
+}
+
+.uppercase-spacing {
+  font-family: Raleway, Arial,sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+/* Header */
+.page-header {
+  color: #000000;
+  background-color: #FFE17F;
+}
+
+.search-field,
+.search-button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  color: inherit;
+  background-color: inherit;
+}
+
+.search-field::placeholder {
+  color: inherit;  
+}
+
+.nav-user ul,
+.nav-catalog ul,
+.nav-servises ul {
+  list-style-type: none;
+}
+
+.nav-user a,
+.nav-catalog a,
+.nav-servises a {
+  color: #000000;
+  text-decoration: inherit;
+}
+
+.user-exit {
+  opacity: 0.3;
+}
+
+.base-button {
+  text-align: center;
+  text-decoration: none;
+  background-color: #FFE17F;
+}
+
+.nav-catalog .submenu-item {
+  font-family: Rubik, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+/* Main */
+.page-title {
+  font-family: Raleway, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+/* Main-index */
+/* Section "slider-products" */
+.slider-feature {
+  list-style-type: none;
+}
+
+.feature-value {
+  font-size: 36px;
+  color: #000000;
+}
+
+.feature-specif {
+  font-size: 16px;
+}
+  
+/* Section "category-products" */
+.category-list {
+  list-style-type: none;
+}
+
+.category-list a {
+  font-family: Raleway, Arial,sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  text-decoration: inherit;
+}
+
+/* Section "servises" */
+.servises {
+  background-color: #F0F0F0;  
+}
+
+.servises-list  {
+  list-style-type: none;
+}
+
+.servises-list .current {
+  color: #FFE17F;
+  background-color: #000000;
+}
+
+.servises-delivery {
+  height: 195px;
+  background: url("../images/delivery.svg") right 20% top 50% no-repeat;
+}
+
+.servises-garanty {
+  height: 195px;
+  background: url("../images/garanty.svg") right 20% top 50% no-repeat;
+}
+
+.servises-credit {
+  height: 195px;
+  background: url("../images/credit.svg") right 20% top 50% no-repeat;
+}
+
+.delivery-rare {
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Section "about-org" */
+.about-list li {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #FFC700;
+}
+
+.about-list span{
+  color: #000000;
+}
+
+.about-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.about-phone {
+  font-style: normal;
+  color: #000000;
+}
+
+.about-shedule {
+  list-style-type: none;
+}
+
+.mailing-block {
+  background-color: #F0F0F0;
+}
+
+.mailing-field {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background-color: inherit;
+  border: none;
+}
+
+.mailing-field::placeholder {
+  color: inherit;  
+}
+
+.mailing-button {
+  font-size: 18px;
+  line-height: 21px;
+  border: 3px solid #CECECE;
+}
+
+/* Footer */
+.page-footer {
+  color: #ffffff;
+  background-color: #444444;
+}
+
+.footer-contacts {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.footer-phone {
+  color: #ffffff;
+  line-height: 20px;
+}
+
+.footer-servises ul,
+.footer-social ul {
+  list-style-type: none;
+}
+
+.footer-servises a,
+.footer-social a,
+.htmlacademy-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Main-inner */
+.breadcrumbs {
+  list-style-type: none;
+}
+
+.breadcrumbs a,
+.filter-list {
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.catalog-products {
+  background-color: #F0F0F0;
+}
+
+.catalog-container{
+  background-color: #FFFFFF;
+}
+
+.filter-group {
+  border: none;
+}
+
+.filter-title,
+.sorting-title {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.filter-subtitle,
+.product-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  letter-spacing: -0.02em;
+}
+
+.filter-list {
+  list-style-type: none;
+}
+
+.filter-form button {
+  border: none;
+}
+
+.sorting-products select {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: #000000;
+  background-color: inherit;
+}
+
+.product-price {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: right;
+}
+
+.pagination-more {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  background-color: inherit;
+  border: 3px solid #E5E5E5;
+}
+
+.catalog-pagination {
+  list-style-type: none;
+  background-color: #EBEBEB;
+}
+
+.catalog-pagination a {
+  text-decoration: none;
+}
+
+.pagination-number {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  opacity: 0.3;  
+}
