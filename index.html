@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин "Девайс"</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -19,10 +20,10 @@
       <nav class="nav-user">            
         <ul>                            
           <li>
-            <a href="#">Войти</a> 
+            <a class="login-button" href="#">Войти</a> 
           </li>
           <li>
-            <a class="visually-hidden" href="#">Выйти</a> 
+            <a class="user-exit visually-hidden" href="#">Выйти</a> 
           </li>
           <li>
             <a href="#">Сравнить</a> 
@@ -33,7 +34,7 @@
         </ul>
       </nav>
 
-      <nav class="nav-catalog">
+      <nav class="nav-catalog uppercase-spacing">
         <ul>
           <li>
             <a href="#">Каталог товаров</a> 
@@ -59,7 +60,7 @@
         </ul>
       </nav>
 
-      <nav class="nav-servises">
+      <nav class="nav-servises uppercase-spacing">
         <ul>
           <li>
             <a href="#">Доставка</a> 
@@ -82,9 +83,9 @@
         
         <div class="slider-card">
           <img class="slider-image" src="images/slider-1.png" width="560" height="560" alt="Квадрокоптер с лазером.">
-          <h3 class="slider-title">Порхает как бабочка, жалит как пчела!</h3>
+          <h3 class="page-title">Порхает как бабочка, жалит как пчела!</h3>
           <p class="slider-desc">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-          <a class="slider-detals base-button">Подробнее</a>  
+          <a class="slider-detals uppercase-spacing base-button">Подробнее</a>  
           <ul class="slider-feature">                         
             <li>
               <p class="feature-value">800 м</p>
@@ -99,9 +100,9 @@
 
         <div class="slider-card">
           <img class="slider-image" src="images/slider-2.png" width="560" height="560" alt="Фитнес-браслет.">
-          <h3 class="slider-title">Худеем правильно!</h3>
+          <h3 class="page-title">Худеем правильно!</h3>
           <p class="slider-desc">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-          <a class="slider-detals base-button">Подробнее</a>
+          <a class="slider-detals uppercase-spacing base-button">Подробнее</a>
           <ul class="slider-feature">
             <li>
               <p class="feature-value">48 часов</p>
@@ -112,9 +113,9 @@
         
         <div class="slider-card">
           <img class="slider-image" src="images/slider-3.png" width="560" height="560" alt="Длинная палка для селфи.">
-          <h3 class="slider-title">Делай селфи, как Бен Стиллер! </h3>
+          <h3 class="page-title">Делай селфи, как Бен Стиллер! </h3>
           <p class="slider-desc">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-          <a class="slider-detals base-button">Подробнее</a>
+          <a class="slider-detals uppercase-spacing base-button">Подробнее</a>
           <ul class="slider-feature">
             <li>
               <p class="feature-value">8,5 м</p>
@@ -187,54 +188,54 @@
         
         <ul class="servises-list">
           <li>
-            <a class="base-button servises-current" href="#delivery">Доставка</a>
+            <a class="uppercase-spacing base-button current" href="#delivery">Доставка</a>
           </li>
           <li>
-            <a class="base-button" href="#garanty">Гарантия</a>
+            <a class="uppercase-spacing base-button" href="#garanty">Гарантия</a>
           </li>
           <li>
-            <a class="base-button" href="#credit">Кредит</a>
+            <a class="uppercase-spacing base-button" href="#credit">Кредит</a>
           </li>
         </ul>
         
-        <div class="servises-desc" id="delivery" >
-          <h3 class="servises-title">Доставка</h3>
+        <div class="servises-delivery" id="delivery" >
+          <h3 class="page-title">Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
         </div>
-        <div class="servises-desc visually-hidden" id="garanty" >
-          <h3 class="servises-title">Гарантия</h3>
+        <div class="servises-garanty visually-hidden" id="garanty" >
+          <h3 class="page-title">Гарантия</h3>
           <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
         </div>
-        <div class="servises-desc visually-hidden" id="credit">
-          <h3 class="servises-title">Кредит</h3>
+        <div class="servises-credit visually-hidden" id="credit">
+          <h3 class="page-title">Кредит</h3>
           <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
         </div>
 
-        <a class="delivery-rare" href="#">Доставим редкий товар под заказ</a>
+        <a class="delivery-rare uppercase-spacing" href="#">Доставим редкий товар под заказ</a>
       </section>
 
       <section class="about-org">
         <h2 class="visually-hidden">Информация о компании</h2>
 
         <article class="about-block">
-          <h3 class="about-title">О нас</h3>
+          <h3 class="page-title">О нас</h3>
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
           <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
           <ul class="about-list">
-            <li>Меловые линии</li>
-            <li>СДИК</li>
-            <li>ТоксБерри</li>
+            <li><span>Меловые линии</span></li>
+            <li><span>СДИК</span></li>
+            <li><span>ТоксБерри</span></li>
           </ul>
-          <a class="base-button" href="#">Подробнее о нас</a>
+          <a class="uppercase-spacing base-button" href="#">Подробнее о нас</a>
         </article>
 
         <article class="about-block">
-          <h3 class="about-title">Контакты</h3>
+          <h3 class="page-title">Контакты</h3>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
           <h4 class="about-subtitle">Интернет-магазин «Девайс»</h4>
           <address>
             <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-            <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+            <a class="about-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </address>
 
           <h4 class="about-subtitle">Время работы</h4>
@@ -242,16 +243,16 @@
             <li>пн—пт: с 10:00 до 22:00</li>
             <li>сб—вс: с 10:00 до 19:00</li>
           </ul>
-          <a class="base-button" href="#">Напишите нам</a>
+          <a class="uppercase-spacing base-button" href="#">Напишите нам</a>
         </article>
 
         <article class="mailing-block">
-          <h3 class="about-title">Подпишитесь на рассылку</h3>
+          <h3 class="page-title">Подпишитесь на рассылку</h3>
           <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
           <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="mailing-id"></label>
             <input class="mailing-field" type="email" id="mailing-id" name="mailing-email" placeholder="Ваш e-mail">
-            <button class="mailing-button" type="submit">Подписаться</button>
+            <button class="mailing-button uppercase-spacing" type="submit">Подписаться</button>
           </form>
           <p>Это бесплатно</p>
         </article>
@@ -264,20 +265,20 @@
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-        <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </section>
     
       <section class="footer-servises">
         <h2 class="visually-hidden">Услуги</h2>
         <ul>
           <li>
-            <a href="#">Доставка</a> 
+            <a class="uppercase-spacing" href="#">Доставка</a> 
           </li>
           <li>
-            <a href="#">Гарантия</a> 
+            <a class="uppercase-spacing" href="#">Гарантия</a> 
           </li>
           <li>
-            <a href="#">Контакты</a> 
+            <a class="uppercase-spacing" href="#">Контакты</a> 
           </li>
         </ul>
       </section>

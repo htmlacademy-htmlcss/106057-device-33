@@ -50,6 +50,12 @@ body {
   text-transform: uppercase;
 }
 
+.base-button {
+  text-align: center;
+  text-decoration: none;
+  background-color: #FFE17F;
+}
+
 /* Header */
 .page-header {
   color: #000000;
@@ -86,12 +92,6 @@ body {
   opacity: 0.3;
 }
 
-.base-button {
-  text-align: center;
-  text-decoration: none;
-  background-color: #FFE17F;
-}
-
 .nav-catalog .submenu-item {
   font-family: Rubik, Arial, sans-serif;
   font-weight: 400;
@@ -111,6 +111,7 @@ body {
 }
 
 /* Main-index */
+
 /* Section "slider-products" */
 .slider-feature {
   list-style-type: none;
@@ -268,6 +269,7 @@ body {
   text-decoration: none;
 }
 
+/* Section "catalog-products" */
 .catalog-products {
   background-color: #F0F0F0;
 }
@@ -276,6 +278,7 @@ body {
   background-color: #FFFFFF;
 }
 
+/* Aside "filter-products" */
 .filter-group {
   border: none;
 }
@@ -303,6 +306,7 @@ body {
   border: none;
 }
 
+/* Article class="catalog-content" */
 .sorting-products select {
   font-family: inherit;
   font-size: inherit;
@@ -338,5 +342,6 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+  color: #444444;
   opacity: 0.3;  
 }
