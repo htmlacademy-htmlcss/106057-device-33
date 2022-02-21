@@ -802,7 +802,7 @@ body {
 .product-card img {
   width: 100%;
   min-height: 380px;
-  object-fit: none;
+  object-fit: contain;
 }
 
 .sign-container {
