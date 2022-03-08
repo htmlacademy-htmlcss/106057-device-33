@@ -113,7 +113,7 @@ body {
   width: 1160px;
   margin: 0 auto;
   padding-top: 44px;
-  padding-bottom: 23px;
+  padding-bottom: 18px;
   padding-left: 60px;
   padding-right: 60px;
   box-sizing: border-box;
@@ -839,7 +839,23 @@ body {
   top: 0;
   background: #FFE17F url("../images/delivery-rare.svg") 50% 50% no-repeat;
 }
-/* Описание состояний - в Section CATEGORY-PRODUCTS */
+
+.delivery-rare a::after {
+  position: absolute;
+  content: '';
+  width: 40px;
+  height: 40px;
+  right: 43px;
+  top: 32px;
+  background: rgba(220, 220, 220, 0.5) url("../images/icons.svg") -45px -37px;
+  border-radius: 50% 50%;
+}
+
+.delivery-rare a:hover::after {
+  background: rgba(220, 220, 220, 0.5) url("../images/icons.svg") -7px -37px;
+}
+
+/* Описание остальных состояний - в Section CATEGORY-PRODUCTS */
 
 /* Section ABOUT-ORG */
 /* Article  ABOUT-BLOCK */
@@ -1354,6 +1370,7 @@ body {
 .catalog-sorting select {
   min-width: 160px;
   margin: 0;
+  margin-top: -5px;
   margin-right: 200px;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -1382,16 +1399,51 @@ body {
   opacity: 0.1;
 }
 
-
 .sorting-arrow {
   display: flex;
 }
 
-.arrow-up,
-.arrow-down {
+.sort-up,
+.sort-down {
   display: block;
   width: 30px;
   height: 30px;
+  margin-top: -5px;
+  opacity: 0.2;
+}
+
+.sort-up {
+  background: url("../images/icons.svg") -12px -353px;
+}
+
+.sort-down {
+  background: url("../images/icons.svg") -12px -329px;
+}
+
+.sort-up:hover,
+.sort-down:hover {
+  opacity: 0.5;
+}
+
+.sort-up:focus,
+.sort-down:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.sort-up:active,
+.sort-down:active {
+  opacity: 1;
+}
+
+.sort-up.current,
+.sort-down.current {
+  visibility: hidden;
+}
+
+.sort-up:focus:active,
+.sort-down:focus:active {
+  opacity: 1;
+  outline: 2px solid #AF4FFF;
 }
 
 .content-container {
@@ -1409,10 +1461,38 @@ body {
   background-color: #FFFFFF;
 }
 
+.product-card {
+  position: relative;
+}
+
+.product-card.new::after {
+  position: absolute;
+  content: 'NEW';
+  width: 60px;
+  height: 60px;
+  right: 27px;
+  top: 27px;
+  padding-left: 4px;
+  padding-top: 19px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.6);
+  border: 2px solid rgba(0, 0, 0, 0.6);
+  border-radius: 50% 50%;
+  box-sizing: border-box;
+}
+
 .product-card img {
   width: 100%;
   min-height: 380px;
   object-fit: contain;
+  background: rgba(240, 240, 240, 0.8);
 }
 
 .sign-container {
@@ -1431,6 +1511,33 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: right;
+}
+
+.product-detals {
+  visibility: hidden;
+  position: absolute;
+  transform-origin: 50% 50%;
+  left: 73px;
+  top: 170px;
+}
+
+.product-card:hover img,
+.product-card:active img {
+  opacity: 0.3;
+  border: 1px solid #444444;
+}
+
+.product-card:hover .product-detals,
+.product-card:active .product-detals {
+  visibility: visible;
+}
+
+.product-card:hover .sign-container {
+  opacity: 0.6;
+}
+
+.product-card:active .sign-container {
+  opacity: 0.3;
 }
 
 .pagination-more {
@@ -1481,6 +1588,28 @@ body {
   text-decoration: none;
 }
 
+.pagination-direct:hover {
+  background: #DCDCDC;
+}
+
+.pagination-direct:focus {
+  background: #F0F0F0;
+  outline: 2px solid #AF4FFF;
+}
+
+.pagination-direct:focus:hover {
+  background: #DCDCDC;
+}
+
+.pagination-direct:active {
+  color: rgba(0, 0, 0, 0.3);
+  background: #DCDCDC;
+}
+
+.pagination-direct.current {
+  visibility: hidden;
+}
+
 .pagination-number {
   display: flex;
   margin: 0;
@@ -1497,7 +1626,32 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: #444444;
+  color: rgba(68, 68, 68, 0.3);
   text-decoration: none;
-  opacity: 0.3;
+ 
+}
+
+.pagination-number a:hover {
+  color: rgba(68, 68, 68, 1);
+}
+
+.pagination-number a:focus {
+  color: rgba(68, 68, 68, 0.3);
+  outline: 2px solid #AF4FFF;
+}
+
+.pagination-number a:focus:hover {
+  color: rgba(68, 68, 68, 1);
+}
+
+.pagination-number a:focus:active {
+  color: rgba(68, 68, 68, 0.1);
+}
+
+.pagination-number a:active {
+  color: rgba(68, 68, 68, 0.1);
+}
+
+.pagination-number a.current {
+  color: rgba(68, 68, 68, 0.6);
 }
