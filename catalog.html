@@ -36,43 +36,48 @@
         </nav>
         
         <nav class="nav-container second">
-          <ul class="nav-catalog uppercase-spacing">
-            <li>
-              <a href="#">Каталог товаров</a> 
+          <ul class="nav-main uppercase-spacing">
+            <li class="nav-catalog">
+              <a href="catalog.html">Каталог товаров</a>
             </li>
-          </ul>
 
-          <ul class="catalog-submenu">
-            <li class="submenu-item submenu-virtual">
-              <a class="current" href="#">Виртуальная реальность</a> 
-            </li>
-            <li class="submenu-item submenu-monopod">
-              <a href="">Моноподы для селфи</a> 
-            </li>
-            <li class="submenu-item submenu-camera">
-              <a href="#">Экшн-камеры</a> 
-            </li>
-            <li class="submenu-item submenu-fitnes">
-              <a href="#">Фитнес-браслеты</a> 
-            </li>
-            <li class="submenu-item submenu-clock">
-              <a href="#">Умные часы</a> 
-            </li>
-            <li class="submenu-item submenu-copter">
-              <a href="#">Квадрокоптеры</a> 
-            </li>
-          </ul>
-                           
-          <ul class="nav-servises uppercase-spacing">
             <li>
-              <a class="current" href="#">Доставка</a> 
+              <ul class="catalog-submenu">
+                <li class="submenu-item submenu-virtual">
+                  <a href="#">Виртуальная реальность</a> 
+                </li>
+                <li class="submenu-item submenu-monopod">
+                  <a href="catalog.html">Моноподы для селфи</a> 
+                </li>
+                <li class="submenu-item submenu-camera">
+                  <a href="#">Экшн-камеры</a> 
+                </li>
+                <li class="submenu-item submenu-fitnes">
+                  <a href="#">Фитнес-браслеты</a> 
+                </li>
+                <li class="submenu-item submenu-clock">
+                  <a href="#">Умные часы</a> 
+                </li>
+                <li class="submenu-item submenu-copter">
+                  <a href="#">Квадрокоптеры</a> 
+                </li>
+              </ul>
             </li>
+
             <li>
-              <a href="#">Гарантия</a> 
+              <ul class="nav-servises uppercase-spacing">
+                <li>
+                  <a href="#">Доставка</a> 
+                </li>
+                <li>
+                  <a href="#">Гарантия</a> 
+                </li>
+                <li>
+                  <a href="#">Контакты</a> 
+                </li>
+              </ul>
             </li>
-            <li>
-              <a href="#">Контакты</a> 
-            </li>
+            
           </ul>
         </nav>
       </div>
@@ -97,43 +102,78 @@
           </ul>
         </header>
       </div>
-       
-      
+            
       <section class="catalog-products">
         <div class="main-container">
           <h2 class="visually-hidden">Каталог товаров с фильтрами</h2>
 
           <div class="catalog-container">
-            <aside class="catalog-filter">
+            <section class="catalog-filter">
               <h3 class="filter-title uppercase-spacing" >фильтр:</h3>
         
               <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
+                <fieldset class="filter-group">
+                  <legend class="filter-subtitle">Стоимость</legend>
+    
+                  <div class="range">
+                    <div class="range-scale">
+                      <div class="range-bar" style="left: 1px; width: 120px">
+                        <button class="range-toggle toggle-min" type="button">
+                          <span class="visually-hidden">Изменить минимальную цену.</span>
+                        </button>
+                        <button class="range-toggle toggle-max" type="button">
+                          <span class="visually-hidden">Изменить максимальную цену.</span>
+                        </button>
+                      </div>
+                    </div>
+    
+                    <div class="range-wrapper" style=" left: 0px; width: 167px">
+                      <label class="range-label">
+                        от <input class="range-input" type="number" value="0" name="min-price">
+                      </label>
+                      <label class="range-label">
+                        до <input class="range-input" type="number" value="5000" name="max-price">
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+
                 <fieldset class="filter-group">
                   <legend class="filter-subtitle">Цвет</legend>
                   <ul class="filter-list">
                     <li>
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="black" checked>Черный
+                        <input class="control-input visually-hidden" type="checkbox" name="black" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Черный</span>
                       </label>
                     </li>
                     <li>
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="white" checked>Белый
+                        <input class="control-input visually-hidden" type="checkbox" name="white" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Белый</span>
                       </label>
                     </li>
                     <li>
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="blue">Синий
+                        <input class="control-input visually-hidden" type="checkbox" name="blue">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Синий</span>
                       </label>
                     </li>
                     <li>
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="red">Красный
+                        <input class="control-input visually-hidden" type="checkbox" name="red">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Красный</span>
                       </label>
                     </li>
                     <li>
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="pink">Розовый
+                        <input class="control-input visually-hidden" type="checkbox" name="pink">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Розовый</span>
                       </label>
                     </li>
                   </ul>
@@ -144,12 +184,16 @@
                   <ul class="filter-list">
                     <li>
                       <label class="control">
-                        <input class="control-input" type="radio" name="bluetooth" checked>Есть
+                        <input class="control-input visually-hidden" type="radio" name="bluetooth" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Есть</span>
                       </label>
                     </li>
                     <li>
                       <label class="control">
-                        <input class="control-input" type="radio" name="bluetooth">Нет
+                        <input class="control-input visually-hidden" type="radio" name="bluetooth">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Нет</span>
                       </label>
                     </li>              
                   </ul>
@@ -157,9 +201,9 @@
 
                 <button class="uppercase-spacing base-button" type="submit">Показать</button>
               </form>
-            </aside>
+            </section>
       
-            <article class="catalog-content">
+            <section class="catalog-content">
               <div class="catalog-sorting">
                 <h3 class="sorting-title uppercase-spacing">сортировка:</h3>
             
@@ -219,15 +263,15 @@
   
                 <ul class="catalog-pagination">
                   <li>
-                    <a class="pagination-direct uppercase-spacing current" href="#">Назад</a>
+                    <a class="pagination-direct uppercase-spacing pagination-prev" href="#">Назад</a>
                   </li>
                   <li>
                     <ul class="pagination-number">
                       <li>
-                        <a class="current" href="#">1</a>
+                        <a href="#">1</a>
                       </li>
                       <li>
-                        <a href="#">2</a>
+                        <a class="current" href="#">2</a>
                       </li>
                       <li>
                         <a href="#">3</a>
@@ -241,11 +285,11 @@
                     </ul>
                   </li>
                   <li>
-                    <a class="pagination-direct uppercase-spacing" href="#">Вперёд</a>
+                    <a class="pagination-direct uppercase-spacing pagination-next" href="#">Вперёд</a>
                   </li>
                 </ul>
               </div>
-            </article>
+            </section>
           </div>
         </div>
       </section>
