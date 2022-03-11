@@ -36,43 +36,48 @@
         </nav>
         
         <nav class="nav-container second">
-          <ul class="nav-catalog uppercase-spacing">
-            <li>
-              <a href="#">Каталог товаров</a> 
+          <ul class="nav-main uppercase-spacing">
+            <li class="nav-catalog">
+              <a href="catalog.html">Каталог товаров</a>
             </li>
-          </ul>
 
-          <ul class="catalog-submenu">
-            <li class="submenu-item submenu-virtual">
-              <a class="current" href="#">Виртуальная реальность</a> 
-            </li>
-            <li class="submenu-item submenu-monopod">
-              <a href="catalog.html">Моноподы для селфи</a> 
-            </li>
-            <li class="submenu-item submenu-camera">
-              <a href="#">Экшн-камеры</a> 
-            </li>
-            <li class="submenu-item submenu-fitnes">
-              <a href="#">Фитнес-браслеты</a> 
-            </li>
-            <li class="submenu-item submenu-clock">
-              <a href="#">Умные часы</a> 
-            </li>
-            <li class="submenu-item submenu-copter">
-              <a href="#">Квадрокоптеры</a> 
-            </li>
-          </ul>
-                           
-          <ul class="nav-servises uppercase-spacing">
             <li>
-              <a class="current" href="#">Доставка</a> 
+              <ul class="catalog-submenu">
+                <li class="submenu-item submenu-virtual">
+                  <a href="#">Виртуальная реальность</a> 
+                </li>
+                <li class="submenu-item submenu-monopod">
+                  <a href="catalog.html">Моноподы для селфи</a> 
+                </li>
+                <li class="submenu-item submenu-camera">
+                  <a href="#">Экшн-камеры</a> 
+                </li>
+                <li class="submenu-item submenu-fitnes">
+                  <a href="#">Фитнес-браслеты</a> 
+                </li>
+                <li class="submenu-item submenu-clock">
+                  <a href="#">Умные часы</a> 
+                </li>
+                <li class="submenu-item submenu-copter">
+                  <a href="#">Квадрокоптеры</a> 
+                </li>
+              </ul>
             </li>
+
             <li>
-              <a href="#">Гарантия</a> 
+              <ul class="nav-servises uppercase-spacing">
+                <li>
+                  <a href="#">Доставка</a> 
+                </li>
+                <li>
+                  <a href="#">Гарантия</a> 
+                </li>
+                <li>
+                  <a href="#">Контакты</a> 
+                </li>
+              </ul>
             </li>
-            <li>
-              <a href="#">Контакты</a> 
-            </li>
+
           </ul>
         </nav>
       </div>
@@ -88,8 +93,6 @@
           <div class="slider-card">
             <div class="slider-container">
               <img class="slider-image" src="images/slider-1.png" width="560" height="560" alt="Квадрокоптер с лазером.">
-              <button class="slider-arrow left"></button>
-              <button class="slider-arrow right"></button>
             </div>
             <div class="slider-container">
               <h3 class="slider-title page-title">Порхает как бабочка, жалит как пчела!</h3>
@@ -111,8 +114,6 @@
           <div class="slider-card visually-hidden">
             <div class="slider-container">
               <img class="slider-image" src="images/slider-2.png" width="560" height="560" alt="Фитнес-браслет.">
-              <button class="slider-arrow left"></button>
-              <button class="slider-arrow right"></button>
             </div>
             <div class="slider-container">
               <h3 class="slider-title page-title">Худеем<br> правильно!</h3>
@@ -128,10 +129,8 @@
           </div>
         
           <div class="slider-card visually-hidden">
-            <div class="slider-container image">
+            <div class="slider-container">
               <img class="slider-image" src="images/slider-3.png" width="560" height="560" alt="Длинная палка для селфи.">
-              <button class="slider-arrow left"></button>
-              <button class="slider-arrow right"></button>
             </div>
             <div class="slider-container">
               <h3 class="slider-title page-title">Делай селфи,<br> как Бен Стиллер! </h3>
@@ -154,16 +153,18 @@
               </div>
           </div>
 
-          <button class="slider-direct slider-prev" type="button">
-            <span class="visually-hidden">Предыдущий товар</span>
-          </button>
-          <button class="slider-direct slider-next" type="button">
-            <span class="visually-hidden">Следующий товар</span>
-          </button>
+          <div class="direct-wrapper">
+            <button class="slider-direct prev" type="button">
+              <span class="visually-hidden">Предыдущий товар</span>
+            </button>
+            <button class="slider-direct next" type="button">
+              <span class="visually-hidden">Следующий товар</span>
+            </button>
+          </div>
   
           <ol class="slider-pagination">
             <li>
-              <button class="slider-button slider-current" type="button">
+              <button class="slider-button current" type="button">
                 <span class="visually-hidden">1 товар</span>
               </button>
             </li>
@@ -237,13 +238,13 @@
         <div class="main-container servises-container">
           <ul class="servises-list">
             <li class="current">
-              <a class="uppercase-spacing base-button current" href="#delivery">Доставка</a>
+              <button class="uppercase-spacing base-button current" type="button" href="#delivery">Доставка</button>
             </li>
             <li>
-              <a class="uppercase-spacing base-button" href="#garanty">Гарантия</a>
+              <button class="uppercase-spacing base-button" type="button" href="#garanty">Гарантия</button>
             </li>
             <li>
-              <a class="uppercase-spacing base-button" href="#credit">Кредит</a>
+              <button class="uppercase-spacing base-button" type="button" href="#credit">Кредит</button>
             </li>
           </ul>
       
@@ -262,13 +263,13 @@
         </div>
       </section>
 
-      <article class="main-container delivery-rare">
+      <div class="main-container delivery-rare">
         <h3 class="visually-hidden">Заказ доставки редкого товара</h3>
         <a class="uppercase-spacing" href="#">Доставим редкий товар под заказ
           <div class="rare-image">
           </div>
         </a>
-      </article>
+      </div>
             
       <section class="about-org">
         <h2 class="visually-hidden">Информация о компании</h2>
@@ -340,7 +341,7 @@
             <p class="footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
             <ul class="footer-servises">
               <li>
-                <a class="uppercase-spacing current" href="#">Доставка</a> 
+                <a class="uppercase-spacing" href="#">Доставка</a> 
               </li>
               <li>
                 <a class="uppercase-spacing" href="#">Гарантия</a> 
