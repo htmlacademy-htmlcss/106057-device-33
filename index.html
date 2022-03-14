@@ -54,16 +54,12 @@
                       </button>
                     </li>
                   </ul>
-                  <form class="cart-total" action="https://echo.htmlacademy.ru/" method="post">
-                    <label>
-                      Товаров: <input type="number" name="cart-number" value="2">
-                    </label>
-                    <label>
-                      Сумма: <input type="number" name="cart-sum" value="2000"> ₽
-                    </label>
-                  </form>
-                  <div class="cart-button-wrapper">
-                    <button class="cart-open-button uppercase-spacing" type="button" href="#">Открыть корзину</button>
+                  <div class="cart-total">
+                    <span>Товаров: 2</span>
+                    <span>Сумма: 2000 ₽</span>
+                  </div>
+                  <div class="cart-open-wrapper">
+                    <a class="cart-open uppercase-spacing" href="#">Открыть корзину</a>
                   </div>
                 </div>
               </div> 
@@ -274,13 +270,13 @@
         <div class="main-container servises-container">
           <ul class="servises-list">
             <li class="current">
-              <button class="uppercase-spacing base-button current" type="button" href="#delivery">Доставка</button>
+              <button class="uppercase-spacing base-button current" type="button">Доставка</button>
             </li>
             <li>
-              <button class="uppercase-spacing base-button" type="button" href="#garanty">Гарантия</button>
+              <button class="uppercase-spacing base-button" type="button">Гарантия</button>
             </li>
             <li>
-              <button class="uppercase-spacing base-button" type="button" href="#credit">Кредит</button>
+              <button class="uppercase-spacing base-button" type="button">Кредит</button>
             </li>
           </ul>
       
@@ -433,7 +429,7 @@
 
     <div class="modal-container modal-close">
       <div class="modal-order">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
@@ -452,16 +448,17 @@
             </div>
             <div class="field-group">
               <label class="modal-label" for="product-id">Что нужно привезти:</label>
-              <input class="modal-field product" type="text" id="product-id" name="order-product" placeholder="В свободной форме">
+              <input class="modal-field product" type="text" id="product-id" name="order-product" placeholder="В свободной форме" required>
+              <p class="required-product">Укажите товар</p>
               </div>
             <div class="field-group">
               <label class="modal-label number" for="number-id">Количество:
-                <p class="number-info">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям<br> к провозу багажа.</p>
+                <span class="number-info">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям<br> к провозу багажа.</span>
               </label>
               <div class="field-number-wrapper">
-                <div class="number-minus" tabindex="0"></div>
+                <button class="number-minus" type="button"></button>
                 <input class="modal-field number" type="number" id="number-id" name="order-number" value="1">
-                <div class="number-plus" tabindex="0"></div>
+                <button class="number-plus" type="button"></button>
               </div>
             </div>
             <button class="order-submit uppercase-spacing base-button" type="submit">Отправить</button>

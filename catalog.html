@@ -30,7 +30,39 @@
               <a class="compare" href="#">Сравнить</a> 
             </li>
             <li>
-              <a class="cart" href="#">Корзина</a> 
+              <a class="cart" href="#">Корзина</a>
+              <div class="popover-cart popover-close">
+                <div class="popover-content">
+                  <h2 class="popover-title visually-hidden">Корзина</h2>
+                  <ul class="cart-list">
+                    <li class="cart-item">
+                      <div class="cart-item-wrapper" tabindex="0">
+                        <img src="images/product-1.jpg" width="39" height="43" alt="">
+                        <p>Любительская<br> селфи-палка</p>
+                      </div>
+                      <button class="item-delete-button">
+                        <span class="visually-hidden">Убрать из корзины</span>
+                      </button>
+                    </li>
+                    <li class="cart-item">
+                      <div class="cart-item-wrapper" tabindex="0">
+                        <img src="images/product-2.jpg" width="39" height="43" alt="">
+                        <p>Профессиональная<br> селфи-палка</p>
+                      </div>
+                      <button class="item-delete-button">
+                        <span class="visually-hidden">Убрать из корзины</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="cart-total">
+                    <span>Товаров: 2</span>
+                    <span>Сумма: 2000 ₽</span>
+                  </div>
+                  <div class="cart-open-wrapper">
+                    <a class="cart-open uppercase-spacing" href="#">Открыть корзину</a>
+                  </div>
+                </div>
+              </div> 
             </li>
           </ul>
         </nav>
@@ -39,9 +71,6 @@
           <ul class="nav-main uppercase-spacing">
             <li class="nav-catalog">
               <a href="catalog.html">Каталог товаров</a>
-            </li>
-
-            <li>
               <ul class="catalog-submenu">
                 <li class="submenu-item submenu-virtual">
                   <a href="#">Виртуальная реальность</a> 
@@ -297,7 +326,7 @@
 
     <footer class="page-footer">
       <div class="footer-container">
-        <a class="footer-logo logo">
+        <a class="footer-logo logo" href="index.html">
           <img src="images/logo-yellow.svg" width="145" height="36" alt="Логотип интернет-магазина Девайс.">
         </a>
             
