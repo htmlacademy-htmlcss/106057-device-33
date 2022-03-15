@@ -276,19 +276,19 @@ body {
   padding-bottom: 5px;
 }
 
-.nav-user > li > a:hover,
+.nav-user .user-link:hover,
 .nav-servises a:hover,
 .catalog-submenu a:hover {
   opacity: 0.6;  
 }
 
-.nav-user > li > a:focus,
+.nav-user .user-link:focus,
 .nav-servises a:focus,
 .catalog-submenu a:focus {
   outline: 2px solid #AF4FFF;
 }
 
-.nav-user > li > a:active,
+.nav-user .user-link:active,
 .nav-servises a:active,
 .catalog-submenu a:active {
   opacity: 0.3;
@@ -457,7 +457,7 @@ body {
   visibility: hidden;
   display: grid;
   grid-template-areas: 
-    "virtual fitnes  copter"
+    "virtual fitness  copter"
     "monopod clock    ."
     "camera    .      .";
   grid-template-columns: 230px 193px 211px;
@@ -490,8 +490,8 @@ body {
   grid-area: camera;
 }
 
-.submenu-fitnes {
-  grid-area: fitnes;
+.submenu-fitness {
+  grid-area: fitness;
 }
 
 .submenu-clock {
@@ -687,7 +687,7 @@ body {
   margin-right: 20px;
 }
 
-.slider-card:nth-of-type(3) .slider-feature li {
+.slider-feature .margin-big {
   margin-right: 40px;
 }
 
@@ -795,27 +795,27 @@ body {
   background-repeat: no-repeat;
 }
 
-.category-item:nth-of-type(1) .category-image {
+.category-image.image-virtual {
   background-position: 50% -20px;
 }
 
-.category-item:nth-of-type(2) .category-image {
+.category-image.image-monopod {
   background-position: 50% -185px;
 }
 
-.category-item:nth-of-type(3) .category-image {
+.category-image.image-camera {
   background-position: 50% -350px;
 }
 
-.category-item:nth-of-type(4) .category-image {
+.category-image.image-fitness {
   background-position: 50% -515px;
 }
 
-.category-item:nth-of-type(5) .category-image {
+.category-image.image-clock {
   background-position: 50% -680px;
 }
 
-.category-item:nth-of-type(6) .category-image {
+.category-image.image-copter {
   background-position: 50% -845px;
 }
 
