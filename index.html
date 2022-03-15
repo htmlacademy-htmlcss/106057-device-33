@@ -30,7 +30,39 @@
               <a class="compare" href="#">Сравнить</a> 
             </li>
             <li>
-              <a class="cart" href="#">Корзина</a> 
+              <a class="cart" href="#">Корзина</a>
+              <div class="popover-cart popover-close">
+                <div class="popover-content">
+                  <h2 class="popover-title visually-hidden">Корзина</h2>
+                  <ul class="cart-list">
+                    <li class="cart-item">
+                      <div class="cart-item-wrapper" tabindex="0">
+                        <img src="images/product-1.jpg" width="39" height="43" alt="">
+                        <p>Любительская<br> селфи-палка</p>
+                      </div>
+                      <button class="item-delete-button">
+                        <span class="visually-hidden">Убрать из корзины</span>
+                      </button>
+                    </li>
+                    <li class="cart-item">
+                      <div class="cart-item-wrapper" tabindex="0">
+                        <img src="images/product-2.jpg" width="39" height="43" alt="">
+                        <p>Профессиональная<br> селфи-палка</p>
+                      </div>
+                      <button class="item-delete-button">
+                        <span class="visually-hidden">Убрать из корзины</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="cart-total">
+                    <span>Товаров: 2</span>
+                    <span>Сумма: 2000 ₽</span>
+                  </div>
+                  <div class="cart-open-wrapper">
+                    <a class="cart-open uppercase-spacing" href="#">Открыть корзину</a>
+                  </div>
+                </div>
+              </div> 
             </li>
           </ul>
         </nav>
@@ -238,13 +270,13 @@
         <div class="main-container servises-container">
           <ul class="servises-list">
             <li class="current">
-              <button class="uppercase-spacing base-button current" type="button" href="#delivery">Доставка</button>
+              <button class="uppercase-spacing base-button current" type="button">Доставка</button>
             </li>
             <li>
-              <button class="uppercase-spacing base-button" type="button" href="#garanty">Гарантия</button>
+              <button class="uppercase-spacing base-button" type="button">Гарантия</button>
             </li>
             <li>
-              <button class="uppercase-spacing base-button" type="button" href="#credit">Кредит</button>
+              <button class="uppercase-spacing base-button" type="button">Кредит</button>
             </li>
           </ul>
       
@@ -394,5 +426,47 @@
         </section>
       </div>
     </footer>
+
+    <div class="modal-container modal-close">
+      <div class="modal-order">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title page-title">Доставка под заказ</h2>
+
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="field-group">
+              <label class="modal-label" for="name-id">Ваше имя:</label>
+              <input class="modal-field name" type="text" id="name-id" name="order-name" placeholder="Введите имя" required>
+              <p class="required-name">Добавьте имя</p>
+            </div>
+            <div class="field-group">
+              <label class="modal-label" for="email-id">Ваш e-mail:</label>
+                <input class="modal-field email" type="email" id="email-id" name="order-email" placeholder="Введите e-mail" required>
+                <p class="invalid-email">Забавный у вас адрес</p>
+            </div>
+            <div class="field-group">
+              <label class="modal-label" for="product-id">Что нужно привезти:</label>
+              <input class="modal-field product" type="text" id="product-id" name="order-product" placeholder="В свободной форме" required>
+              <p class="required-product">Укажите товар</p>
+              </div>
+            <div class="field-group">
+              <label class="modal-label number" for="number-id">Количество:
+                <span class="number-info">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям<br> к провозу багажа.</span>
+              </label>
+              <div class="field-number-wrapper">
+                <button class="number-minus" type="button"></button>
+                <input class="modal-field number" type="number" id="number-id" name="order-number" value="1">
+                <button class="number-plus" type="button"></button>
+              </div>
+            </div>
+            <button class="order-submit uppercase-spacing base-button" type="submit">Отправить</button>
+          </form>
+
+        </section>
+      </div>
+    </div>
+
   </body>
 </html>
