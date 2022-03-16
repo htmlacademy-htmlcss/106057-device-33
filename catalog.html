@@ -35,14 +35,13 @@
               <a class="cart" href="#">Корзина</a>
               <div class="popover-cart popover-close">
                 <div class="popover-content">
-                  <h2 class="popover-title visually-hidden">Корзина</h2>
                   <ul class="cart-list">
                     <li class="cart-item">
                       <div class="cart-item-wrapper" tabindex="0">
                         <img src="images/product-1.jpg" width="39" height="43" alt="">
                         <p>Любительская<br> селфи-палка</p>
                       </div>
-                      <button class="item-delete-button">
+                      <button class="item-delete-button" type="button">
                         <span class="visually-hidden">Убрать из корзины.</span>
                       </button>
                     </li>
@@ -51,7 +50,7 @@
                         <img src="images/product-2.jpg" width="39" height="43" alt="">
                         <p>Профессиональная<br> селфи-палка</p>
                       </div>
-                      <button class="item-delete-button">
+                      <button class="item-delete-button" type="button">
                         <span class="visually-hidden">Убрать из корзины.</span>
                       </button>
                     </li>
@@ -244,8 +243,12 @@
                 </select>
       
                 <div class="sorting-arrow">
-                  <a class="sort-up" href="#"></a>
-                  <a class="sort-down" href="#"></a>
+                  <a class="sort-up" href="#">
+                    <span class="visually-hidden">Сортировать по возрастанию.</span>
+                  </a>
+                  <a class="sort-down" href="#">
+                    <span class="visually-hidden">Сортировать по убыванию.</span>
+                  </a>
                 </div>
               </div>
 

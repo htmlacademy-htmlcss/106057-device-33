@@ -35,14 +35,13 @@
               <a class="user-link cart" href="#">Корзина</a>
               <div class="popover-cart popover-close">
                 <div class="popover-content">
-                  <h2 class="popover-title visually-hidden">Корзина</h2>
                   <ul class="cart-list">
                     <li class="cart-item">
                       <div class="cart-item-wrapper" tabindex="0">
                         <img src="images/product-1.jpg" width="39" height="43" alt="">
                         <p>Любительская<br> селфи-палка</p>
                       </div>
-                      <button class="item-delete-button">
+                      <button class="item-delete-button" type="button">
                         <span class="visually-hidden">Убрать из корзины.</span>
                       </button>
                     </li>
@@ -51,7 +50,7 @@
                         <img src="images/product-2.jpg" width="39" height="43" alt="">
                         <p>Профессиональная<br> селфи-палка</p>
                       </div>
-                      <button class="item-delete-button">
+                      <button class="item-delete-button" type="button">
                         <span class="visually-hidden">Убрать из корзины.</span>
                       </button>
                     </li>
@@ -296,10 +295,7 @@
 
       <div class="main-container delivery-rare">
         <h3 class="visually-hidden">Заказ доставки редкого товара.</h3>
-        <a class="rare-link uppercase-spacing" href="#">Доставим редкий товар под заказ
-          <div class="rare-image">
-          </div>
-        </a>
+        <a class="uppercase-spacing" href="#">Доставим редкий товар под заказ</a>
       </div>
             
       <section class="about-org">
@@ -455,9 +451,13 @@
                 <span class="number-info">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям<br> к провозу багажа.</span>
               </label>
               <div class="field-number-wrapper">
-                <button class="number-minus" type="button"></button>
+                <button class="number-minus" type="button">
+                  <span class="visually-hidden">Уменьшить количество на 1.</span>
+                </button>
                 <input class="modal-field number" type="number" id="number-id" name="order-number" value="1">
-                <button class="number-plus" type="button"></button>
+                <button class="number-plus" type="button">
+                  <span class="visually-hidden">Увеличить количество на 1.</span>
+                </button>
               </div>
             </div>
             <button class="order-submit uppercase-spacing base-button" type="submit">Отправить</button>
