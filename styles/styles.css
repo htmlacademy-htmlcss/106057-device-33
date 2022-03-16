@@ -826,23 +826,24 @@ body {
 }
 
 .category-link:hover .category-image,
-.rare-link:hover .rare-image {
+.delivery-rare a:hover::before {
   background-color: #FFC700;
 }
 
 .category-link:focus,
-.rare-link:focus {
+.delivery-rare a:focus {
+  opacity: 1;
   border: none;
   outline: none;
   box-shadow: 0 0 0 2px #FFFFFF, 0 0 0 4px #AF4FFF;
 }
 
 .category-link:active,
-.rare-link:active {
+.delivery-rare a:active {
   opacity: 0.3;
 }
 
-.rare-link:disabled {
+.delivery-rare a:disabled {
   opacity: 0.1;
 }
 
@@ -920,10 +921,13 @@ body {
   background-color: #F0F0F0;
 }
 
-.rare-image {
+.delivery-rare a::before {
   position: absolute;
+  content: '';
   width: 125px;
   height: 100%;
+  left: 0;
+  top: 0;
   left: 0;
   top: 0;
   background: #FFE17F url("../images/delivery-rare.svg") 50% 50% no-repeat;
@@ -1104,6 +1108,7 @@ body {
   box-sizing: border-box;
   font-size: 18px;
   line-height: 21px;
+  background-color: transparent;
   border: 3px solid #CECECE;
   cursor: pointer;
 }
@@ -1383,8 +1388,19 @@ body {
 }
 
 .breadcrumbs li {
+  position: relative;
   margin-right: 37px;
 }
+
+.breadcrumbs li:not(:last-child)::after {
+  position: absolute;
+  content: '';
+  width: 6px;
+  height: 9px;
+  right: -23px;
+  top: 11px;
+  background: url("../images/breadcrumbs-arrow.svg") 50% 50% no-repeat;
+} 
 
 .breadcrumbs a,
 .filter-list {
